@@ -6,7 +6,8 @@ import {
   AiFillYoutube, 
   AiFillGithub
 } from 'react-icons/ai'
-import{BsFillMoonStarsFill} from 'react-icons/bs'
+import { BsFillMoonStarsFill } from 'react-icons/bs'
+import mohaimin from '../public/dev-ed-wave.png'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <main>
         <section>
           <nav className='flex items-center justify-between max-w-7xl m-auto px-4 mb-12'>
-            <h1 className='text-gray-700 font-semibold text-2xl text-left py-4 cursor-pointer'>DevByMohaimin</h1>
+            <h1 className='text-gray-700 font-semibold text-xl text-left py-4 cursor-pointer sm:text-2xl'>DevByMohaimin</h1>
 
             <ul className='flex items-center justify-between '>
               <li className='cursor-pointer text-3xl'><BsFillMoonStarsFill/></li>
@@ -41,6 +42,16 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/programmermohaimin/"> <AiFillLinkedin/></a>
           </div>
 
+          <div className='overflow-hidden relative bg-gradient-to-t from-white to-teal-500 rounded-full w-80 h-80 mx-auto mt-20'>
+            <Image layout='fill' objectFit='cover' src={mohaimin} alt='Mohaimin'/>
+          </div>
+
+          <div  className='max-w-2xl mx-auto px-4'>
+            <h1 className='text-gray-600 font-semibold text-4xl text-left py-4'>Services I Offer</h1>
+            <p className='text-gray-500 font-normal text-xl text-left py-4'>I am a programmer mohaimin and I am learning web development . Still now I am a <span className='text-teal-500 font-semibold'>Front-end Developer</span>, But in future I wanted to become e Full-Stack Developer. I have own plan and I create a Company near future. I will help you to make <span className='text-teal-500 font-semibold'>your dream</span> on your project.</p>
+
+            <p className='text-gray-500 font-normal text-xl text-left py-4' >I will help you to make your dream on your project. I wanted to become e <span className='text-teal-500 font-semibold'> Full-Stack Developer</span>.</p>
+          </div>
        </section>
       </main>
 
