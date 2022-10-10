@@ -1,6 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import moon from '../public/moon.png'
+import {
+  AiFillTwitterCircle, 
+  AiFillLinkedin, 
+  AiFillYoutube, 
+  AiFillGithub
+} from 'react-icons/ai'
+import{BsFillMoonStarsFill} from 'react-icons/bs'
 
 export default function Home() {
   return (
@@ -17,12 +23,23 @@ export default function Home() {
             <h1 className='text-gray-700 font-semibold text-2xl text-left py-4 cursor-pointer'>DevByMohaimin</h1>
 
             <ul className='flex items-center justify-between '>
-              <li className='w-10 h-10 cursor-pointer'><Image src={moon} alt="moon"/></li>
+              <li className='cursor-pointer text-3xl'><BsFillMoonStarsFill/></li>
               <li><a className='border-none px-8 py-2 m-4 border-black text-black font-semibold text-1xl rounded-full bg-gradient-to-r from-cyan-300 to-cyan-500' href='#'>Resume</a></li>
             </ul>
           </nav>
 
-          
+          <div className='text-center p-10'>
+            <h1 className='text-cyan-600 font-semibold text-5xl py-2'>Mohaimin Islam</h1>
+            <h2 className='font-semibold text-2xl pb-4'>Front-end Designer and Developer</h2>
+            <p className='text-gray-500 font-normal text-xl max-w-lg mx-auto'>I am a programmer mohaimin and I am learning web development . Still now I am a Front-end Developer. But in future I wanted to become e Full-Stack Developer.</p>
+          </div>
+
+          <div className='flex items-center justify-center text-4xl space-x-8'>
+            <a href="https://github.com/ProgrammerMohaimin"> <AiFillGithub/></a>
+            <a href="https://youtube.com/DevMohaimin"> <AiFillYoutube/></a>
+            <a href="https://twitter.com/DevMohaimin"> <AiFillTwitterCircle/></a>
+            <a href="https://www.linkedin.com/in/programmermohaimin/"> <AiFillLinkedin/></a>
+          </div>
 
        </section>
       </main>
