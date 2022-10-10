@@ -1,0 +1,1 @@
+## This is a simple Next-js Project With React and Tailwind-CCS
