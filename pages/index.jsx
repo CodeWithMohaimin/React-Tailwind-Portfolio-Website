@@ -278,7 +278,7 @@ export default function Home() {
           </p>
         </footer>
         <MessengerCustomerChat
-          pageId="100069186221784"
+          pageId="102306715670926"
           appId="487326113363644"
         />
         ,
