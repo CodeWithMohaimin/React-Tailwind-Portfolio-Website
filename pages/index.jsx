@@ -25,6 +25,7 @@ import web6 from "../public/web6.png";
 import {useState} from "react";
 import {AiFillCopyrightCircle} from "react-icons/ai";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import Link from "next/link";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -39,12 +40,12 @@ export default function Home() {
       <main className="p-4 dark:bg-gray-900 dark:text-white">
         <section>
           <nav className="flex items-center justify-between max-w-7xl m-auto mb-12">
-            <a
+            <Link
               href="/"
               className={`${gunterzFont.className} font-semibold text-xl text-left py-4 cursor-pointer sm:text-3xl font-[gunterzFont]`}
             >
               Mohaimin
-            </a>
+            </Link>
 
             <ul className="flex items-center justify-between ">
               <li className="cursor-pointer text-3xl">
