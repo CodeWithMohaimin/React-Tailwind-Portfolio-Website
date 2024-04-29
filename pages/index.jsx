@@ -56,7 +56,7 @@ export default function Home() {
                   className="border-none px-8 py-2 border-black text-black font-semibold text-1xl rounded-full bg-gradient-to-r from-cyan-300 to-cyan-500"
                   href="https://calendly.com/mohai/30min"
                 >
-                  Let's Chat!
+                  Let<span>&#x2019;</span>s Chat!
                 </a>
               </li>
             </ul>
@@ -78,22 +78,22 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-center text-4xl space-x-8 mt-8">
-            <a href="https://github.com/ProgrammerMohaimin">
+            <Link href="https://github.com/ProgrammerMohaimin">
               {" "}
               <AiFillGithub />
-            </a>
-            <a href="https://youtube.com/ProgrammerMohaimin">
+            </Link>
+            <Link href="https://youtube.com/ProgrammerMohaimin">
               {" "}
               <AiFillYoutube />
-            </a>
-            <a href="https://twitter.com/DevMohaimin">
+            </Link>
+            <Link href="https://twitter.com/DevMohaimin">
               {" "}
               <AiFillTwitterCircle />
-            </a>
-            <a href="https://www.linkedin.com/in/programmermohaimin/">
+            </Link>
+            <Link href="https://www.linkedin.com/in/programmermohaimin/">
               {" "}
               <AiFillLinkedin />
-            </a>
+            </Link>
           </div>
 
           <div className="overflow-hidden relative bg-gradient-to-t from-white to-teal-500 rounded-full w-80 h-80 mx-auto mt-20 md:w-96 md:h-96 ">
@@ -110,8 +110,8 @@ export default function Home() {
               Services I Offer
             </h1>
             <p className="text-gray-500 dark:text-gray-400 font-normal text-xl text-left py-2 lg:text-center">
-              I'm Mohaimin Islam, a frontend website developer in Bangladesh
-              specializing in creating{" "}
+              I<span>&#x2019;</span>m Mohaimin Islam, a frontend website
+              developer in Bangladesh specializing in creating{" "}
               <span className="text-teal-500 font-semibold">
                 beautiful and functional
               </span>{" "}
@@ -125,9 +125,9 @@ export default function Home() {
               <span className="text-teal-500 font-semibold">
                 (HTML, CSS, Javascript, ReactJs, NextJs)
               </span>{" "}
-              or a sleek and modern design crafted within Squarespace's
-              intuitive interface, I have the expertise to bring your vision to
-              life.
+              or a sleek and modern design crafted within Squarespace
+              <span>&#x2019;</span>s intuitive interface, I have the expertise
+              to bring your vision to life.
               <span className="text-teal-500 font-semibold"></span>
             </p>
           </div>
@@ -146,8 +146,8 @@ export default function Home() {
                 Whether you need a complex e-commerce platform, a dynamic
                 single-page application, or a simple yet impactful landing page,
                 I can create a website that perfectly aligns with your brand and
-                objectives. Let's discuss your specific requirements and build a
-                website that sets you apart.
+                objectives. Let<span>&#x2019;</span>s discuss your specific
+                requirements and build a website that sets you apart.
               </p>
               <li className="list-none mt-[15px] hover:scale-105 duration-100 inline-block">
                 <a
@@ -172,8 +172,8 @@ export default function Home() {
                 functionalities. Webflow allows for complete design freedom
                 while maintaining clean and manageable code. Whether you need a
                 custom animation, a unique user interaction, or a complex
-                data-driven website, I can leverage Webflow's capabilities to
-                deliver exceptional results.
+                data-driven website, I can leverage Webflow<span>&#x2019;</span>
+                s capabilities to deliver exceptional results.
               </p>
               <li className="list-none mt-[15px] hover:scale-105 duration-100 inline-block">
                 <a
@@ -303,22 +303,22 @@ export default function Home() {
         </section>
         <footer className="mt-40">
           <div className="flex items-center justify-center text-4xl space-x-8 my-8">
-            <a href="https://github.com/ProgrammerMohaimin">
+            <Link href="https://github.com/ProgrammerMohaimin">
               {" "}
               <AiFillGithub />
-            </a>
-            <a href="https://youtube.com/ProgrammerMohaimin">
+            </Link>
+            <Link href="https://youtube.com/ProgrammerMohaimin">
               {" "}
               <AiFillYoutube />
-            </a>
-            <a href="https://twitter.com/DevMohaimin">
+            </Link>
+            <Link href="https://twitter.com/DevMohaimin">
               {" "}
               <AiFillTwitterCircle />
-            </a>
-            <a href="https://www.linkedin.com/in/programmermohaimin/">
+            </Link>
+            <Link href="https://www.linkedin.com/in/programmermohaimin/">
               {" "}
               <AiFillLinkedin />
-            </a>
+            </Link>
           </div>
           <p className="text-center text-xl">
             Developed by{" "}
