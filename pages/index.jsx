@@ -201,7 +201,8 @@ export default function Home() {
                 perfect for businesses or individuals who need a clean, modern
                 website without the complexity of custom coding. I can handle
                 the design, development, and launch, allowing you to focus on
-                running your business.
+                running your business. So, Why wait? Let&#x2019;s{" "}
+                <Link href="https://wa.me/+8801325205421">Chat?</Link>
               </p>
               <li className="list-none mt-[15px] hover:scale-105 duration-100 inline-block">
                 <Link
