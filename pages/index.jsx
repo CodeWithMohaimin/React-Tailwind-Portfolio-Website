@@ -16,6 +16,7 @@ import mohaimin from "../public/mohaimin-website-developer.webp";
 import code from "../public/code.png";
 import webflow from "../public/webflow.png";
 import squarespace from "../public/squarespace.png";
+import framer from "../public/framer.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
@@ -190,19 +191,24 @@ export default function Home() {
 
             {/* 03 card */}
             <div className="hover:shadow-[20px_20px_20px_5px_rgba(0,0,0,0.2)] duration-200 px-4 shadow-xl m-4 rounded-lg text-center p-8 mt-12 dark:bg-gray-700 dark:hover:shadow-blue-500/50 dark:hover:shadow-[20px_20px_30px_5px]">
-              <Image height={130} width={130} src={squarespace} alt="Gallery" />
+              <Image height={130} width={130} src={framer} alt="Gallery" />
               <h1 className="font-semibold text-2xl py-4">
-                Squarespace Website Design
+                Framer Website Design
               </h1>
               <p className="text-gray-500 dark:text-gray-400 font-normal text-lg max-w-md mx-auto">
                 Get a beautiful and functional website up and running quickly
-                with Squarespace. I leverage the power of Squarespace to design
+                with Framer. I leverage the power of Framer to design
                 user-friendly and visually stunning websites. This platform is
                 perfect for businesses or individuals who need a clean, modern
                 website without the complexity of custom coding. I can handle
                 the design, development, and launch, allowing you to focus on
                 running your business. So, Why wait? Let&#x2019;s{" "}
-                <Link href="https://wa.me/+8801325205421">Chat?</Link>
+                <Link
+                  className="text-teal-500"
+                  href="https://wa.me/+8801325205421"
+                >
+                  Chat?
+                </Link>
               </p>
               <li className="list-none mt-[15px] hover:scale-105 duration-100 inline-block">
                 <Link
