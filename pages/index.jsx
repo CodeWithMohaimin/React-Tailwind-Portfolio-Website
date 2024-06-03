@@ -269,8 +269,8 @@ export default function Home() {
                 with powerful CMS functionalities. It allows everything you
                 need. Whether you need a custom animation, a unique user
                 interaction, or a complex data-driven website, I can leverage
-                Webflow&#x2019;s capabilities to solve your struggles. Let's
-                make your web dreams a reality.
+                Webflow&#x2019;s capabilities to solve your struggles.
+                Let&#x2019;s make your web dreams a reality.
               </p>
               <li className="list-none md:mt-[45px] mt-[25px] hover:scale-105 duration-100 inline-block">
                 <Link
