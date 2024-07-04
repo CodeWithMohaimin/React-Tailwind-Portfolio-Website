@@ -1,11 +1,9 @@
-import '../styles/globals.css'
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import '../styles/globals.css';
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GoogleAnalytics />
       <Component {...pageProps} />
     </>
   )

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --mainColor: #D1D9FF;
+    --secondColor: #e3e7ff;
+}
 
 
 html,
@@ -11,4 +15,232 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.mainSection {
+    padding: clamp(1.5625rem, 0.8929rem + 2.381vw, 3.75rem);
+}
+
+.MainLeft {
+    max-width: clamp(12.5rem, 8.176rem + 15.3741vw, 26.625rem);
+}
+
+.profileImageDiv {
+    background-color: rgb(0, 0, 0);
+
+    border-radius: 27px;
+
+}
+
+.profileImage {
+    max-width: 100%;
+    height: clamp(13.75rem, 9.1582rem + 16.3265vw, 28.75rem);
+    background-color: rgb(0, 0, 0);
+    border-radius: 27px;
+    object-fit: cover;
+    transition: all .2s ease;
+    cursor: pointer;
+    object-position: top;
+}
+
+.profileImage:hover {
+    transform: scale(1.01);
+}
+
+.textDiv {
+    width: 100%;
+    border-radius: 9px;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 3px solid var(--mainColor);
+    border-right: 3px solid var(--mainColor);
+}
+
+.name {
+    /* 60-25 */
+    font-size: clamp(1.5625rem, 0.8929rem + 2.381vw, 3.75rem);
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+}
+
+.o {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 27px;
+    border: 8px solid #000;
+    background: transparent;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: clamp(0.6875rem, 0.477rem + 0.7483vw, 1.375rem);
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.smallBio {
+    /* 12-7 */
+    font-size: clamp(0.4375rem, 0.3418rem + 0.3401vw, 0.75rem);
+    line-height: 1;
+    color: #666;
+    padding-top: 5px;
+}
+
+.MainButtonSection {
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.leftButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.button {
+    font-size: clamp(0.5625rem, 0.4477rem + 0.4082vw, 0.9375rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: var(--mainColor);
+    width: 100%;
+    text-align: center;
+    padding-top: clamp(0.4375rem, 0.2462rem + 0.6803vw, 1.0625rem);
+    padding-bottom: clamp(0.4375rem, 0.2462rem + 0.6803vw, 1.0625rem);
+    border-radius: 9px;
+
+}
+
+.bigButton {
+    padding-top: clamp(1.125rem, 0.7423rem + 1.3605vw, 2.375rem);
+    padding-bottom: clamp(1.125rem, 0.7423rem + 1.3605vw, 2.375rem);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    transition: all .1s ease;
+}
+
+/* Left Section End ==================================== */
+
+.mainSection {
+    display: flex;
+    gap: 35px;
+}
+
+@media(max-width: 1050px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .MainLeft {
+        max-width: 100%;
+    }
+
+    .o {
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-radius: 27px;
+        border: 3px solid #000;
+        background: transparent;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
+/* Right Section Start ---------------------------------- */
+.mainRightSide {
+    width: 100%;
+}
+
+.focalDiv {
+    width: 100%;
+    height: clamp(13.75rem, 9.1582rem + 16.3265vw, 28.75rem);
+    background-color: var(--mainColor);
+    border-radius: 27px;
+    transition: all .2s ease;
+}
+
+/* Happy Clients  */
+
+.happyClientsMainDiv {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.happyClientsVideoDiv {
+    display: flex;
+    gap: 14px;
+}
+
+.happyClientVideo {
+    background-color: var(--mainColor);
+    border-radius: 17px;
+    width: 33%;
+    height: 180px;
+}
+
+/* Recent Project  */
+.recentProjectsMainDiv {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.recentProjectsDiv {
+    display: flex;
+    gap: 14px;
+}
+
+.recentProject {
+    background-color: var(--mainColor);
+    border-radius: 17px;
+    width: 33%;
+    height: 138px;
+}
+
+
+@media(max-width: 700px) {
+    .happyClientsVideoDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        transition: all .2s ease;
+    }
+
+    .happyClientVideo {
+        border-radius: 17px;
+        width: 100%;
+        height: 180px;
+    }
+
+    .recentProjectsDiv {
+        flex-direction: column;
+        gap: 14px;
+        transition: all .2s ease;
+    }
+
+    .recentProject {
+        border-radius: 17px;
+        width: 100%;
+        height: 180px;
+    }
 }
