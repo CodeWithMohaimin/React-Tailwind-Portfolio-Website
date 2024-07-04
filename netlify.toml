@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build" # Adjust this if your build command is different
+  publish = "build"         # Adjust this if your publish directory is different
+
+[build.environment]
+  NODE_VERSION = "18"
