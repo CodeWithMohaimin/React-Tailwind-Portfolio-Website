@@ -1,39 +1,22 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
-
+import {useState, useEffect} from "react";
 import localFont from "@next/font/local";
-
 import {useRef} from "react";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
+import Link from "next/link";
 
-const gunterzFont = localFont({
-  src: "./fonts/headingnow/HeadingNowTrial-55Medium.ttf",
-});
+import Carousel from "../components/Carousel";
 
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-  AiFillGithub,
-} from "react-icons/ai";
-import {BsFillMoonStarsFill} from "react-icons/bs";
 import mohaimin from "../public/mohaimin-website-developer.webp";
 import jobCyGif from "../public/recentProjectGif/jobcyproject.gif";
 import tldGif from "../public/recentProjectGif/tldproject.gif";
-import code from "../public/code.png";
-import webflow from "../public/webflow.png";
-import framer from "../public/framer.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import {useState} from "react";
-import {AiFillCopyrightCircle} from "react-icons/ai";
-import MessengerCustomerChat from "react-messenger-customer-chat";
-import Link from "next/link";
+const gunterzFont = localFont({
+  src: "./fonts/headingnow/HeadingNowTrial-55Medium.ttf",
+});
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -82,13 +65,22 @@ export default function Home() {
             {/* Buttons Start  */}
             <div className="MainButtonSection">
               <div className="leftButtons">
-                <Link className="button bigButton" href={"/contact"}>
+                <Link
+                  href={
+                    "mailto:programmermohaimin@gmail.com?subject=subject&message=message"
+                  }
+                  className="button bigButton contactBtn"
+                >
                   Contact
                 </Link>
                 <Link className="button" href={"/process"}>
                   Process
                 </Link>
-                <Link className="button" href={"/linkedIn"}>
+                <Link
+                  href={"https://www.linkedin.com/in/mohai/"}
+                  target="_blank"
+                  className="button"
+                >
                   LinkedIn
                 </Link>
               </div>
@@ -106,12 +98,13 @@ export default function Home() {
             </div>
             {/* Buttons End  */}
           </div>
-          {/* Left side Section Start  */}
 
           {/* Right side Section Start  */}
           <div className="mainRightSide">
-            {/* Focal Point Start  */}
-            <div className="focalDiv"></div>
+            {/* Focal Point Start  ---------------------------------------------------*/}
+            <div className="focalDiv">
+              <Carousel />
+            </div>
             {/* Happy Clients Section Start  */}
             <div className="happyClientsMainDiv">
               <h2 className="bio">Happy Clients</h2>
@@ -121,7 +114,6 @@ export default function Home() {
                 <div className="happyClientVideo"></div>
               </div>
             </div>
-            {/* Happy Clients Section End  */}
 
             {/* Recent Section Start  */}
             <div className="recentProjectsMainDiv">
@@ -135,6 +127,9 @@ export default function Home() {
                   <Image
                     width={100}
                     height={100}
+                    quality={100}
+                    layout="responsive"
+                    objectFit="cover"
                     className="recentProjectGif"
                     src={jobCyGif}
                   />
@@ -166,9 +161,6 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            {/* Recent Section end  */}
-
-            {/* Focal Point End  */}
           </div>
           {/* Right side Section End  */}
         </section>
