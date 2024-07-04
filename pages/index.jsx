@@ -48,8 +48,8 @@ export default function Home() {
                 <Image
                   priority
                   placeholder="blur"
-                  className="profileImage"
                   quality={100}
+                  className="profileImage"
                   src={mohaimin}
                 />
               </Link>
@@ -133,6 +133,7 @@ export default function Home() {
                   <Image
                     width={100}
                     height={100}
+                    priority
                     quality={100}
                     className="recentProjectGif"
                     src={jobCyGif}
@@ -146,6 +147,8 @@ export default function Home() {
                   <Image
                     width={100}
                     height={100}
+                    priority
+                    quality={100}
                     className="recentProjectGif"
                     src={tldGif}
                   />
@@ -159,6 +162,8 @@ export default function Home() {
                   <Image
                     width={100}
                     height={100}
+                    priority
+                    quality={100}
                     className="recentProjectGif"
                     src={jobCyGif}
                   />

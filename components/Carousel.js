@@ -77,11 +77,17 @@ const Carousel = () => {
     return (
         <div className="carousel-frame">
             <div className="carousel-slide" ref={slideRef}>
-                <img src={images[totalImages - 1]} alt="Last Clone" />
+                <img priority
+                    placeholder="blur"
+                    quality={100} src={images[totalImages - 1]} alt="Last Clone" />
                 {images.map((img, index) => (
-                    <img src={img} alt={`Slide ${index}`} key={index} />
+                    <img priority
+                        placeholder="blur"
+                        quality={100} src={img} alt={`Slide ${index}`} key={index} />
                 ))}
-                <img src={images[0]} alt="First Clone" />
+                <img priority
+                    placeholder="blur"
+                    quality={100} src={images[0]} alt="First Clone" />
             </div>
             <FaChevronLeft className="carousel-prev" onClick={prevSlide} />
             <FaChevronRight className="carousel-next" onClick={nextSlide} />
