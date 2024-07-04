@@ -1,11 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-
 const Carousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(1);
-    const [isTransitioning, setIsTransitioning] = useState(false);
-    const slideRef = useRef(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const intervalRef = useRef(null);
 
     const images = [
@@ -20,74 +17,38 @@ const Carousel = () => {
     const totalImages = images.length;
 
     useEffect(() => {
-        // Add first and last clones for infinite loop effect
-        const firstClone = images[0];
-        const lastClone = images[totalImages - 1];
-        const extendedImages = [lastClone, ...images, firstClone];
-        slideRef.current.style.transform = `translateX(-100%)`;
-
         const autoSlide = () => {
-            setCurrentIndex((prevIndex) => prevIndex + 1);
-            setIsTransitioning(true);
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
         };
 
         intervalRef.current = setInterval(autoSlide, 5000);
 
         return () => clearInterval(intervalRef.current);
-    }, []);
-
-    useEffect(() => {
-        if (isTransitioning) {
-            slideRef.current.style.transition = 'transform 0.4s ease-in-out';
-            slideRef.current.style.transform = `translateX(-${100 * currentIndex}%)`;
-
-            if (currentIndex === 0) {
-                setTimeout(() => {
-                    slideRef.current.style.transition = 'none';
-                    setCurrentIndex(totalImages);
-                    slideRef.current.style.transform = `translateX(-${100 * totalImages}%)`;
-                }, 400);
-            } else if (currentIndex === totalImages + 1) {
-                setTimeout(() => {
-                    slideRef.current.style.transition = 'none';
-                    setCurrentIndex(1);
-                    slideRef.current.style.transform = `translateX(-100%)`;
-                }, 400);
-            }
-
-            setIsTransitioning(false);
-        }
-    }, [currentIndex, isTransitioning, totalImages]);
+    }, [totalImages]);
 
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => prevIndex + 1);
-        setIsTransitioning(true);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
     };
 
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => prevIndex - 1);
-        setIsTransitioning(true);
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
     };
 
     const goToSlide = (index) => {
-        setCurrentIndex(index + 1);
-        setIsTransitioning(true);
+        setCurrentIndex(index);
     };
 
     return (
         <div className="carousel-frame">
-            <div className="carousel-slide" ref={slideRef}>
-                <img priority
-                    placeholder="blur"
-                    quality={100} src={images[totalImages - 1]} alt="Last Clone" />
+            <div className="carousel-slide">
                 {images.map((img, index) => (
-                    <img priority
-                        placeholder="blur"
-                        quality={100} src={img} alt={`Slide ${index}`} key={index} />
+                    <img
+                        key={index}
+                        src={img}
+                        alt={`Slide ${index}`}
+                        className={currentIndex === index ? 'active' : ''}
+                    />
                 ))}
-                <img priority
-                    placeholder="blur"
-                    quality={100} src={images[0]} alt="First Clone" />
             </div>
             <FaChevronLeft className="carousel-prev" onClick={prevSlide} />
             <FaChevronRight className="carousel-next" onClick={nextSlide} />
@@ -96,7 +57,7 @@ const Carousel = () => {
                     <li
                         key={index}
                         onClick={() => goToSlide(index)}
-                        className={currentIndex === index + 1 ? 'active-dot' : ''}
+                        className={currentIndex === index ? 'active-dot' : ''}
                     ></li>
                 ))}
             </ol>

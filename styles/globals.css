@@ -80,7 +80,8 @@ body {
 }
 
 .bio {
-    font-size: clamp(0.6875rem, 0.477rem + 0.7483vw, 1.375rem);
+    /* 18-11 */
+    font-size: clamp(0.6875rem, 0.5536rem + 0.4762vw, 1.125rem);
     color: #333;
     font-weight: 500;
     text-transform: uppercase;
@@ -178,43 +179,49 @@ body {
     background-color: var(--mainColor);
     border-radius: 27px;
     transition: all .2s ease;
+    border-radius: 27px;
 }
 
 /* Happy Clients  */
 
 .happyClientsMainDiv {
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
 .happyClientsVideoDiv {
     display: flex;
     gap: 14px;
+    padding-top: 7px;
 }
 
 .happyClientVideo {
     background-color: var(--mainColor);
     border-radius: 17px;
     width: 33%;
-    height: 180px;
+    /* 180-130 */
+    height: clamp(8.125rem, 7.1684rem + 3.4014vw, 11.25rem);
+    text-align: center;
+    padding-top: 10px;
 }
 
 /* Recent Project  */
 .recentProjectsMainDiv {
     padding-top: 15px;
-    padding-bottom: 5px;
+
 }
 
 .recentProjectsDiv {
     display: flex;
     gap: 14px;
+    padding-top: 7px;
 }
 
 .recentProject {
     background-color: var(--mainColor);
-    border-radius: 17px;
+    border-radius: 12px;
     width: 33%;
-    height: 138px;
+    /* 120-90 */
+    height: clamp(5.625rem, 3.3621rem + 3.4483vw, 7.5rem);
 
 }
 
@@ -222,7 +229,7 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 17px;
+    border-radius: 12px;
 }
 
 .recentProjectGif:hover {
