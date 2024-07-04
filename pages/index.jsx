@@ -19,6 +19,8 @@ import {
 } from "react-icons/ai";
 import {BsFillMoonStarsFill} from "react-icons/bs";
 import mohaimin from "../public/mohaimin-website-developer.webp";
+import jobCyGif from "../public/recentProjectGif/jobcyproject.gif";
+import tldGif from "../public/recentProjectGif/tldproject.gif";
 import code from "../public/code.png";
 import webflow from "../public/webflow.png";
 import framer from "../public/framer.png";
@@ -125,14 +127,43 @@ export default function Home() {
             <div className="recentProjectsMainDiv">
               <h2 className="bio">Recent Works</h2>
               <div className="recentProjectsDiv">
-                <Image
-                  width={100}
-                  height={100}
+                <Link
+                  target="_blank"
                   className="recentProject"
-                  src=""
-                />
-                <div className="recentProject"></div>
-                <div className="recentProject"></div>
+                  href={"https://www.jobs.com.cy/"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    className="recentProjectGif"
+                    src={jobCyGif}
+                  />
+                </Link>
+                <Link
+                  target="_blank"
+                  className="recentProject"
+                  href={"https://tldstudio.xyz/"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    className="recentProjectGif"
+                    src={tldGif}
+                  />
+                </Link>
+
+                <Link
+                  target="_blank"
+                  className="recentProject"
+                  href={"https://rey-xpress.com/"}
+                >
+                  <Image
+                    width={100}
+                    height={100}
+                    className="recentProjectGif"
+                    src={jobCyGif}
+                  />
+                </Link>
               </div>
             </div>
             {/* Recent Section end  */}
