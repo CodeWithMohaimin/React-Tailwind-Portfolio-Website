@@ -132,8 +132,8 @@ export default function Home() {
                   href={"https://www.jobs.com.cy/"}
                 >
                   <Image
-                    width={1920}
-                    height={1080}
+                    width={500}
+                    height={300}
                     priority
                     quality={100}
                     className="recentProjectGif"
@@ -146,8 +146,8 @@ export default function Home() {
                   href={"https://tldstudio.xyz/"}
                 >
                   <Image
-                    width={1920}
-                    height={1080}
+                    width={500}
+                    height={300}
                     priority
                     quality={100}
                     className="recentProjectGif"
@@ -161,8 +161,8 @@ export default function Home() {
                   href={"https://rey-xpress.com/"}
                 >
                   <Image
-                    width={1920}
-                    height={1080}
+                    width={500}
+                    height={300}
                     priority
                     quality={100}
                     className="recentProjectGif"
