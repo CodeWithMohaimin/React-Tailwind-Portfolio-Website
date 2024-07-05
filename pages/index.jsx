@@ -10,6 +10,7 @@ import {useGSAP} from "@gsap/react";
 import Link from "next/link";
 
 import Carousel from "../components/Carousel";
+import VideoComponent from "../components/Videos";
 
 import mohaimin from "../public/mohaimin-website-developer.webp";
 import jobCyGif from "../public/recentProjectGif/jobcyproject.gif";
@@ -115,11 +116,10 @@ export default function Home() {
             {/* Happy Clients Section Start  */}
             <div className="happyClientsMainDiv">
               <h2 className="bio">Happy Clients</h2>
-              <div className="happyClientsVideoDiv">
-                <div className="happyClientVideo">Coming Soon...</div>
-                <div className="happyClientVideo">Coming Soon...</div>
-                <div className="happyClientVideo">Coming Soon...</div>
-              </div>
+              {/* <div className="happyClientsVideoDiv">
+                <div className="happyClientVideo"></div>
+              </div> */}
+              <VideoComponent />
             </div>
 
             {/* Recent Section Start  */}

@@ -177,31 +177,14 @@ body {
     width: 100%;
     height: clamp(13.75rem, 9.1582rem + 16.3265vw, 28.75rem);
     background-color: var(--mainColor);
-    border-radius: 27px;
     transition: all .2s ease;
-    border-radius: 27px;
+    border-radius: clamp(0.625rem, 0.2997rem + 1.1565vw, 1.6875rem);
 }
 
 /* Happy Clients  */
 
 .happyClientsMainDiv {
     padding-top: 20px;
-}
-
-.happyClientsVideoDiv {
-    display: flex;
-    gap: 14px;
-    padding-top: 7px;
-}
-
-.happyClientVideo {
-    background-color: var(--mainColor);
-    border-radius: 17px;
-    width: 33%;
-    /* 180-130 */
-    height: clamp(8.125rem, 7.1684rem + 3.4014vw, 11.25rem);
-    text-align: center;
-    padding-top: 10px;
 }
 
 /* Recent Project  */
@@ -229,7 +212,7 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: clamp(0.4375rem, 0.2844rem + 0.5442vw, 0.9375rem);
 }
 
 .recentProjectGif:hover {
@@ -240,26 +223,16 @@ body {
 @media(max-width: 700px) {
     .happyClientsVideoDiv {
         display: flex;
-        flex-direction: column;
-        gap: 14px;
+        /* flex-direction: column; */
+        gap: 7px;
         transition: all .2s ease;
     }
 
-    .happyClientVideo {
-        border-radius: 17px;
-        width: 100%;
-        height: 180px;
-    }
 
     .recentProjectsDiv {
-        flex-direction: column;
-        gap: 14px;
+        /* flex-direction: column; */
+        gap: 7px;
         transition: all .2s ease;
     }
 
-    .recentProject {
-        border-radius: 17px;
-        width: 100%;
-        height: 180px;
-    }
 }

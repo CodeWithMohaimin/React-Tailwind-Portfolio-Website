@@ -1,0 +1,112 @@
+/* components/VideoComponent.module.css */
+
+.videoContainer {
+    display: flex;
+    gap: 14px;
+    padding-top: 7px;
+}
+
+.videoThumbnail {
+    background-color: var(--mainColor);
+    border-radius: clamp(0.4375rem, 0.2844rem + 0.5442vw, 0.9375rem);
+    width: 100%;
+    height: clamp(8.125rem, 7.1684rem + 3.4014vw, 11.25rem);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.thumbnailImage {
+    width: 100%;
+    transition: transform 0.3s;
+    height: 100%;
+    object-fit: cover;
+    border-radius: clamp(0.4375rem, 0.2844rem + 0.5442vw, 0.9375rem);
+}
+
+.thumbnailImage:hover {
+    transform: scale(1.05);
+}
+
+.playIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(0.625rem, 0.338rem + 1.0204vw, 1.5625rem);
+    color: var(--mainColor);
+    animation: pulse 1s infinite;
+    background-color: rgba(255, 67, 67, 0.429);
+    padding: clamp(0.625rem, 0.4337rem + 0.6803vw, 1.25rem);
+    border-radius: 40px;
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10003;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.modalContent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    border-radius: 0;
+    overflow: hidden;
+    outline: none;
+    z-index: 10001;
+    animation: fadeIn 0.5s forwards;
+}
+
+.videoPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10002;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--mainColor);
+    animation: fadeIn 0.5s forwards;
+}

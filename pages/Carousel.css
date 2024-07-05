@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 27px;
+    border-radius: clamp(0.625rem, 0.2997rem + 1.1565vw, 1.6875rem);
     margin: 0 auto;
     overflow: hidden;
     box-shadow: inset 60px 0px 60px -60px rgb(0, 0, 0),
@@ -11,12 +11,22 @@
             transparent,
             transparent 75%,
             rgba(0, 0, 0, 0.3));
+
+
+}
+
+@media(max-width: 425px) {
+    .carousel-frame {
+        width: 113%;
+        margin-left: -22px;
+    }
 }
 
 .carousel-slide {
     position: relative;
     width: 100%;
     height: 100%;
+    background-color: rebeccapurple;
 }
 
 .carousel-slide img {
@@ -28,6 +38,7 @@
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
+
 }
 
 .carousel-slide img.active {
@@ -40,7 +51,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
-    font-size: 35px;
+    font-size: clamp(0.9375rem, 0.5548rem + 1.3605vw, 2.1875rem);
     color: var(--mainColor);
     cursor: pointer;
     transition: all .3s ease;
@@ -56,7 +67,7 @@
 
 .carousel-prev:hover,
 .carousel-next:hover {
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.8673rem + 1.3605vw, 2.5rem);
     color: aquamarine;
 }
 
