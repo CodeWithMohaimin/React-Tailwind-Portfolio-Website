@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Modal from 'react-modal';
+import Image from 'next/image';
 import { FaPlay, FaTimes } from 'react-icons/fa';
 import styles from '../pages/VideoComponent.module.css';
 
@@ -46,7 +47,12 @@ const VideoComponent = () => {
                     className={styles.videoThumbnail}
                     onClick={() => openModal(video)}
                 >
-                    <img src={video.thumbnail} alt={`Video ${video.id}`} className={styles.thumbnailImage} />
+                    <Image
+                        priority
+                        quality={100}
+                        width={1920}
+                        height={1080}
+                        src={video.thumbnail} alt={`Video ${video.id}`} className={styles.thumbnailImage} />
                     <div className={styles.playIcon}>
                         <FaPlay />
                     </div>

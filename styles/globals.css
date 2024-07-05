@@ -201,7 +201,7 @@ body {
 
 .recentProject {
     background-color: var(--mainColor);
-    border-radius: 12px;
+    border-radius: clamp(0.625rem, 0.2997rem + 1.1565vw, 1.6875rem);
     width: 33%;
     /* 120-90 */
     height: clamp(5.625rem, 3.3621rem + 3.4483vw, 7.5rem);

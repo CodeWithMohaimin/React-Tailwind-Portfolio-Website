@@ -17,7 +17,7 @@
 
 @media(max-width: 425px) {
     .carousel-frame {
-        width: 113%;
+        width: 112%;
         margin-left: -22px;
     }
 }
