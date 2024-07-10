@@ -81,8 +81,8 @@ export default function Home() {
                 >
                   Contact
                 </Link>
-                <Link className="button" href={"/process"}>
-                  Process
+                <Link className="button" href={"/pricing"}>
+                  Pricing
                 </Link>
                 <Link
                   href={"https://www.linkedin.com/in/mohai/"}
@@ -115,7 +115,7 @@ export default function Home() {
             </div>
             {/* Happy Clients Section Start  */}
             <div className="happyClientsMainDiv">
-              <h2 className="bio">Happy Clients</h2>
+              <h2 className="bio">Clients Review</h2>
               {/* <div className="happyClientsVideoDiv">
                 <div className="happyClientVideo"></div>
               </div> */}

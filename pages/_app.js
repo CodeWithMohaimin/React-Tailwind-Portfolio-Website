@@ -1,6 +1,8 @@
 import '../styles/globals.css';
-import './Carousel.css';
-import './VideoComponent.module.css';
+import '../styles/Carousel.css';
+import '../styles/VideoComponent.module.css';
+// import '../styles/pricingPlan.module.css';
+
 
 function MyApp({ Component, pageProps }) {
   return (

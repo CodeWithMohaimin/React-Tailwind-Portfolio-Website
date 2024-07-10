@@ -36,7 +36,7 @@
     font-size: clamp(0.625rem, 0.338rem + 1.0204vw, 1.5625rem);
     color: var(--mainColor);
     animation: pulse 1s infinite;
-    background-color: rgba(255, 67, 67, 0.429);
+    background-color: rgba(255, 0, 0, 0.746);
     padding: clamp(0.625rem, 0.4337rem + 0.6803vw, 1.25rem);
     border-radius: 40px;
 }
