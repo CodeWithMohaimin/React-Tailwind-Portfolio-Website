@@ -12,6 +12,7 @@ import Link from "next/link";
 import Carousel from "../components/Carousel";
 import VideoComponent from "../components/Videos";
 
+import {FaPlay, FaTimes} from "react-icons/fa";
 import mohaimin from "../public/mohaimin-website-developer.webp";
 import jobCyGif from "../public/recentProjectGif/jobcyproject.gif";
 import tldGif from "../public/recentProjectGif/tldproject.gif";
@@ -40,13 +41,17 @@ export default function Home() {
         {/* <link rel="icon" href="/website-developer-mohaimin.svg" /> */}
         <link rel="icon" href="/website-developer-mohaimin-kaligraphy.svg" />
       </Head>
-      <main className="bg-[#EEEFFF] min-h-[100vh]">
+      <main className="bg-[#000] animated-background min-h-screen bg-gradient-to-r from-[#5360af] via-[#42af80] to-[#c15b5b]">
         <section className="mainSection">
           {/* Left side Section Start  */}
           <div className="MainLeft">
             {/* Profile Image Start */}
             <div className="profileImageDiv">
-              <Link href={"/"}>
+              <Link
+                target="_blank"
+                className="relative"
+                href={"https://www.youtube.com/@CodeWithMohaimin"}
+              >
                 <Image
                   priority
                   placeholder="blur"
@@ -55,6 +60,7 @@ export default function Home() {
                   src={mohaimin}
                   alt="Profile"
                 />
+                <FaPlay className="playBtn absolute text-[#fff] text-xl md:text-3xl" />
               </Link>
             </div>
             {/* Profile Image End */}
@@ -82,8 +88,13 @@ export default function Home() {
                 >
                   Contact
                 </Link>
-                <Link className="button" href={"/pricing"}>
-                  Pricing
+
+                <Link
+                  target="_blank"
+                  className="button"
+                  href={"https://github.com/codewithmohaimin"}
+                >
+                  GitHub
                 </Link>
                 <Link
                   href={"https://www.linkedin.com/in/mohai/"}
@@ -94,15 +105,12 @@ export default function Home() {
                 </Link>
               </div>
               <div className="leftButtons">
-                <Link
-                  target="_blank"
-                  className="button"
-                  href={"https://github.com/codewithmohaimin"}
-                >
-                  Projects
+                <Link className="button" href={"/pricing"}>
+                  Pricing &#128176;
                 </Link>
+
                 <Link className="button" href={"/reviews"}>
-                  Reviews
+                  Case Studies &#128270;
                 </Link>
                 <Link
                   target="_blank"

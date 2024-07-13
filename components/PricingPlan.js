@@ -5,10 +5,9 @@ import mohaimin from "../public/mohaimin-website-developer.webp";
 
 const PricingCard = () => {
   return (
-    <header >
-      <nav className='backdrop-blur-sm bg-[#000]/30 sticky top-0 z-50'>
-
-        <div className='flex items-center justify-between max-w-[1500px] w-full mx-auto px-10 py-4'>
+    <header className='bg-[#000]'>
+      <nav className="backdrop-blur-sm bg-[#000]/30 sticky top-0 z-50">
+        <div className="flex items-center justify-between max-w-[1500px] w-full mx-auto px-10 py-4">
           <div className="">
             <Link href={"/"}>
               <Image
@@ -22,24 +21,32 @@ const PricingCard = () => {
             </Link>
           </div>
 
-
           <div>
             <Link
-              target='_blank'
-              className='text-white bg-blue-600 px-6 md:px-10 py-2 md:py-4 rounded-xl font-semibold uppercase text-xs md:text-base duration-150'
-              href={'https://calendly.com/mohai/30min'}>
+              target="_blank"
+              className="text-white bg-blue-600 px-6 md:px-10 py-2 md:py-4 rounded-xl font-semibold uppercase text-xs md:text-base duration-300 hover:bg-blue-800"
+              href={"https://calendly.com/mohai/30min"}
+            >
               Book A Video Call
             </Link>
           </div>
         </div>
-
       </nav>
 
 
-      <section className='bg-[#081030]  min-h-screen p-4'>
-        <h1 className='bg-[#081030] text-white  text-center text-4xl pt-5 pb-24'>100% Mony Back Grantee</h1>
+      <section className='bg-[#000]  min-h-screen p-4'>
 
-        <div className="bg-[#081030] text-[#dfe8ff] flex justify-center gap-5  flex-wrap">
+        <div className="text-center pt-5 pb-10">
+          <h1 className="text-white text-2xl md:text-5xl font-bold">
+            No Hidden Cost
+          </h1>
+          <p className="text-[#999] text-sm md:text-2xl pt-2 md:pt-4">
+            {" "}
+            Invest Yourself
+          </p>
+        </div>
+
+        <div className="bg-[#000] text-[#dfe8ff] flex justify-center gap-5  flex-wrap">
 
           {/* Offer 1 ----------------------------------------------------------------------- */}
           <article className="bg-[#000] hover:bg-blue-600 duration-500 border-[#fff] hover:border-blue-600  border-[1px] rounded-2xl w-full max-w-[500px] p-8 flex flex-col justify-between">
@@ -81,7 +88,7 @@ const PricingCard = () => {
           <article className="bg-[#000] hover:bg-blue-600 duration-500 border-[#fff] hover:border-blue-600   border-[1px] rounded-2xl w-full max-w-[500px] p-8 flex flex-col justify-between">
             <div>
 
-              <h2 className="text-lg md:text-2xl font-semibold mt-4 text-white">Creatives Portfolio Pack =
+              <h2 className="text-lg md:text-2xl font-semibold mt-4 text-white">Portfolio Pack =
 
                 <span className=" text-teal-300 ">
                   $1,997

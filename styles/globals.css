@@ -26,25 +26,41 @@ body {
 }
 
 .profileImageDiv {
-    background-color: rgb(0, 0, 0);
-
+    background-color: rgb(255, 23, 23);
     border-radius: 27px;
+}
 
+.playBtn {
+    position: absolute;
+    animation: pulse 1s infinite;
+    left: 10%;
+    bottom: 5%;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
 
 .profileImage {
     max-width: 100%;
     height: clamp(13.75rem, 9.1582rem + 16.3265vw, 28.75rem);
-    background-color: rgb(0, 0, 0);
     border-radius: 27px;
     object-fit: cover;
-    transition: all .2s ease;
+    transition: all .3s ease;
     cursor: pointer;
     object-position: top;
 }
 
 .profileImage:hover {
-    transform: scale(1.01);
+    opacity: .3;
 }
 
 .textDiv {
@@ -60,7 +76,7 @@ body {
     /* 60-25 */
     font-size: clamp(1.5625rem, 0.8929rem + 2.381vw, 3.75rem);
     font-weight: 700;
-    color: #222;
+    color: #000;
     line-height: 1;
     text-transform: uppercase;
     width: 100%;
@@ -91,13 +107,13 @@ body {
     /* 12-7 */
     font-size: clamp(0.4375rem, 0.3418rem + 0.3401vw, 0.75rem);
     line-height: 1;
-    color: #666;
+    color: #333;
     padding-top: 5px;
 }
 
 .MainButtonSection {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     padding-top: 15px;
 }
 
@@ -107,7 +123,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
 }
 
 .button {
@@ -120,7 +136,13 @@ body {
     padding-top: clamp(0.4375rem, 0.2462rem + 0.6803vw, 1.0625rem);
     padding-bottom: clamp(0.4375rem, 0.2462rem + 0.6803vw, 1.0625rem);
     border-radius: 9px;
+    transition: all .5s ease;
 
+}
+
+.button:hover {
+    background-color: #000;
+    color: var(--mainColor);
 }
 
 .bigButton {
@@ -235,4 +257,26 @@ body {
         transition: all .2s ease;
     }
 
+}
+
+
+/* Animation in Background  */
+.animated-background {
+    background-size: 400%;
+
+    -webkit-animation: animation 30s ease infinite;
+    -moz-animation: animation 30s ease infinite;
+    animation: animation 30s ease infinite;
+}
+
+@keyframes animation {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
 }
