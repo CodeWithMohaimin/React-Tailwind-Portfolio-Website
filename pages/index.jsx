@@ -75,7 +75,7 @@ export default function Home() {
               <div className="leftButtons">
                 <Link
                   href={
-                    "mailto:programmermohaimin@gmail.com?subject=I%20need%20a%20Website%20&message=message"
+                    "mailto:heymohaimin@gmail.com?subject=I%20need%20your%20help&body=Hi%20Mohaimin%2C%0A%0AI'am%20"
                   }
                   className="button bigButton contactBtn"
                 >
@@ -103,8 +103,14 @@ export default function Home() {
                 <Link className="button" href={"/reviews"}>
                   Reviews
                 </Link>
-                <Link className="button bigButton" href={"/reviews"}>
-                  Blogs
+                <Link
+                  target="_blank"
+                  className="button bigButton"
+                  href={
+                    "https://www.linkedin.com/in/mohai/recent-activity/articles/"
+                  }
+                >
+                  articles
                 </Link>
               </div>
             </div>
