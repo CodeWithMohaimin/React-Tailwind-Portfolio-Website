@@ -75,7 +75,7 @@ export default function Home() {
               <div className="leftButtons">
                 <Link
                   href={
-                    "mailto:programmermohaimin@gmail.com?subject=subject&message=message"
+                    "mailto:programmermohaimin@gmail.com?subject=I%20need%20a%20Website%20&message=message"
                   }
                   className="button bigButton contactBtn"
                 >
@@ -93,13 +93,17 @@ export default function Home() {
                 </Link>
               </div>
               <div className="leftButtons">
-                <Link className="button" href={"/process"}>
+                <Link
+                  target="_blank"
+                  className="button"
+                  href={"https://github.com/codewithmohaimin"}
+                >
                   Projects
                 </Link>
-                <Link className="button" href={"/linkedIn"}>
+                <Link className="button" href={"/reviews"}>
                   Reviews
                 </Link>
-                <Link className="button bigButton" href={"/contact"}>
+                <Link className="button bigButton" href={"/reviews"}>
                   Blogs
                 </Link>
               </div>

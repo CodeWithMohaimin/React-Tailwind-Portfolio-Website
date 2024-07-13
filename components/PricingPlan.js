@@ -5,7 +5,7 @@ import mohaimin from "../public/mohaimin-website-developer.webp";
 
 const PricingCard = () => {
   return (
-    <header className='bg-[#081030]'>
+    <header >
       <nav className='backdrop-blur-sm bg-[#000]/30 sticky top-0 z-50'>
 
         <div className='flex items-center justify-between max-w-[1500px] w-full mx-auto px-10 py-4'>
