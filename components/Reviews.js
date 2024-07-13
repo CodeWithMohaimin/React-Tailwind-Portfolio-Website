@@ -6,6 +6,7 @@ import mohaimin from "../public/mohaimin-website-developer.webp";
 const Reviews = () => {
   const items = [
     {
+      key: "a1",
       src: "/reviews/jobs.jpg",
       ClientName: "JobsCy",
       country: "Cyprus",
@@ -14,6 +15,7 @@ const Reviews = () => {
       caseStudy: "reviews/JobCy",
     },
     {
+      key: "b2",
       src: "/reviews/tld.jpg",
       ClientName: "TLD Studio",
       country: "United Kingdom",
@@ -22,6 +24,7 @@ const Reviews = () => {
       caseStudy: "reviews/tldStudio",
     },
     {
+      key: "c3",
       src: "/reviews/rey.jpg",
       ClientName: "Rey-Express",
       country: "Canada",
@@ -76,7 +79,7 @@ const Reviews = () => {
             {items.map((item, index) => (
               <Link href={item.caseStudy}>
                 <div
-                  key={index}
+                  key={item.key}
                   className="break-inside-avoid mb-8 rounded-lg md:rounded-xl hover:scale-105 duration-300 cursor-pointer border-[1px] border-[#555] hover:bg-blue-600"
                 >
                   <img
