@@ -77,9 +77,8 @@ const Reviews = () => {
         <div className="max-w-[1500px] w-full mx-auto px-10 py-4">
           <div className="columns-1 md:columns-2 xl:columns-3 gap-7">
             {items.map((item, index) => (
-              <Link href={item.caseStudy}>
+              <Link key={item.key} href={item.caseStudy}>
                 <div
-                  key={item.key}
                   className="break-inside-avoid mb-8 rounded-lg md:rounded-xl hover:scale-105 duration-300 cursor-pointer border-[1px] border-[#555] hover:bg-blue-600"
                 >
                   <img
