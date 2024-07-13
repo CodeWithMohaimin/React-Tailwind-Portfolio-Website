@@ -17,6 +17,7 @@ const PricingCard = () => {
                 quality={100}
                 className="w-[50px] md:w-[80px] rounded-full"
                 src={mohaimin}
+                alt="logo"
               />
             </Link>
           </div>

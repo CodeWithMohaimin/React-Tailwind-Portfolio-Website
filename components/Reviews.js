@@ -25,6 +25,7 @@ const Reviews = () => {
                 quality={100}
                 className="w-[50px] md:w-[80px] rounded-full"
                 src={mohaimin}
+                alt="logo"
               />
             </Link>
           </div>
@@ -44,11 +45,11 @@ const Reviews = () => {
       <section className="bg-black min-h-screen ">
         <div className="text-center pt-5 pb-10">
           <h1 className="text-white text-2xl md:text-5xl">
-            You’re in good hands{" "}
+            You&#34;re in good hands{" "}
           </h1>
           <p className="text-[#999] text-sm md:text-2xl pt-2 md:pt-4">
             {" "}
-            Read what our "Website Campus" subscribers say about us
+            Read what our Website Campus subscribers say about us
           </p>
         </div>
 

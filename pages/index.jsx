@@ -53,6 +53,7 @@ export default function Home() {
                   quality={100}
                   className="profileImage"
                   src={mohaimin}
+                  alt="Profile"
                 />
               </Link>
             </div>
@@ -146,6 +147,7 @@ export default function Home() {
                     height={100}
                     className="recentProjectGif"
                     src={jobCyGif}
+                    alt="recentProjectGif"
                   />
                 </Link>
                 <Link
@@ -158,6 +160,7 @@ export default function Home() {
                     height={100}
                     className="recentProjectGif"
                     src={tldGif}
+                    alt="recentProjectGif"
                   />
                 </Link>
 
@@ -171,6 +174,7 @@ export default function Home() {
                     height={100}
                     className="recentProjectGif"
                     src={jobCyGif}
+                    alt="recentProjectGif"
                   />
                 </Link>
               </div>
